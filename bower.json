@@ -1,0 +1,13 @@
+{
+  "name": "portafolio",
+  "authors": [
+    "Jhon Edison <jhon_edinson11@hotmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "dependencies": {
+    "paper-menu": "PolymerElements/paper-menu#^1.2.2"
+  }
+}

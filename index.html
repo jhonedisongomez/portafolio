@@ -1,16 +1,30 @@
+<!doctype html>
 <html>
-<head>
-	<title>inicio</title>
-	<link rel="import" href="../bower_components/paper-menu.html">
-<link rel="import" href="../bower_components/paper-submenu.html">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>app-router-examples</title>
+    <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="/bower_components/app-router/app-router.html">
+     <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+  </head>
 <body>
+ 
 
-	<p>este es un portafolio de servicios</p>
-	<paper-menu>
-  <paper-item>Item 1</paper-item>
-  <paper-item>Item 2</paper-item>
-</paper-menu>
+<paper-toolbar>
+  <span class="title">Title</span>
+</paper-toolbar>
+
+    <a href="#/home" role="menuitem">Home</a>
+    <a href="#/page-two" role="menuitem">page2</a>
+    
+    <content></content>
+<app-router>
+  <app-route path="/home" import="/pages/home-page.html"></app-route>
+  <app-route path="/page-two" import="/pages/customer-page.html"></app-route>
+
+</app-router>
 
 </body>
 </html>
